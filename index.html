@@ -10,38 +10,113 @@
         name="description"
         content="TEST"
         />
-        <title>Classwork Beta</title>
+        <title>WebKaboo Beta</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+        <script src="js/main.js"></script>
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/color.css">
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/content.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
     </head>
 
     <body>
 
-    <header>
+    <header class="scroll">
         <div class="header-max">
 
-            <div class="menu-mobile"></div>            
+            <div class="menu-mobile">
+                <div onclick="ClickMenu()" class="button">
+                    <div class="bar-1 br-1 scroll-4"></div>
+                    <div class="bar-2 br-2 scroll-4"></div>
+                    <div class="bar-3 br-3 scroll-4"></div>
+                </div>
+            </div>            
             
             <div class="logo">
                 <div class="logo-img"></div>
-                <div class="logo-title"><b>Classwork</b>&nbsp;Beta</div>
+                <div class="logo-title scroll-2">Webkaboo&nbsp;<div class="sample-text">Beta</div></div>
             </div>
 
             <div class="menu-desk">
-                <a href="#" class="nbm-link1">Ayuda</a>
-                <a href="#" class="nbm-link1">Herramientas</a>
-                <a href="#" class="nbm-link1">RSS</a>
-                <div class="nbm-ia">Chat IA</div>
+                <a href="#" class="nbm-link1 scroll-2">Ayuda</a>
+                <a href="#" class="nbm-link1 scroll-2">Herramientas</a>
+                <a href="#" class="nbm-link1 scroll-2">RSS</a>   
+                
+                <div class="dark-mode">
+                    <div class="restone">
+                        <div onclick="Darkmode()" class="dark-button"></div>
+                        <div class="dark-resolution"></div>
+                    </div>
+                </div>
+                
             </div>
 
+            <div class="visible-btn"></div>
+        
         </div>
+
     </header>
 
-    </body>
+    <div class="menu-wave menu-on scroll-3">
+        <div class="menu-grid">
+            <a href="#" onclick="ClickMenu()" class="menu-grid-link smooth-menu scroll-2">Ayuda</a>
+            <a href="#" onclick="ClickMenu()" class="menu-grid-link smooth-menu menu-delay scroll-2">Herramientas</a>
+            <a href="#" onclick="ClickMenu()" class="menu-grid-link smooth-menu menu-delay-2 scroll-2">RSS</a>
+        </div>
+    </div>
 
-    <script src="js/main.js"></script>
+
+    <div class="content-base">
+    
+        <div class="hero-bg"><div class="hero">
+            
+        </div></div>
+
+        <div class="block-1">
+            <div class="entrada-grid">
+
+                <div class="sesion-1">
+                    <div class="sesion-title">Cosas importantes antes de empezar a crear un sitio web</div>
+                    <div class="sesion-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet adipisci numquam temporibus sapiente natus ullam repellendus magni vitae quos impedit aliquid suscipit, voluptate facere enim, dolor sunt delectus eligendi?</div>
+                    <div class="sesion-button">
+                        <div class="visitar-button">Visitar el sitio</div>
+                        <div class="icon-ventana"></div>
+                    </div>
+                </div>
+
+                <div class="sesion-1">
+                    <div class="sesion-title">Colores gradientes</div>
+                    <div class="sesion-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet adipisci numquam temporibus sapiente natus ullam repellendus magni vitae quos impedit aliquid suscipit, voluptate facere enim, dolor sunt delectus eligendi?</div>
+                    <div class="sesion-button">
+                        <div class="visitar-button">Visitar el sitio</div>
+                        <div class="icon-ventana"></div>
+                    </div>
+                </div>
+
+                <div class="sesion-1">
+                    <div class="sesion-title">Colores gradientes</div>
+                    <div class="sesion-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet adipisci numquam temporibus sapiente natus ullam repellendus magni vitae quos impedit aliquid suscipit, voluptate facere enim, dolor sunt delectus eligendi?</div>
+                    <div class="sesion-button">
+                        <div class="visitar-button">Visitar el sitio</div>
+                        <div class="icon-ventana"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ventana-grid"></div>
+        </div>
+
+        <footer></footer>
+
+    </div>
+
+
+
+    </body>
     
 </html>

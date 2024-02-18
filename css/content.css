@@ -1,0 +1,144 @@
+.content-base {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background);
+}
+
+.hero-bg {
+    background: #347bd8;
+    background-image: url(../promp/wave.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    width: 100%;
+    max-width: 1180px;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+
+    /*background-image: url(../test.png);
+    background-size: cover;
+    background-position: center center;
+
+    background-repeat: no-repeat;*/
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    display: flex;
+
+    padding: 20px;
+    gap: 20px;
+}
+
+.block-1 {
+    width: 100%;
+    max-width: 1190px;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+
+    gap: 20px;
+    flex-direction: column;
+}
+
+.entrada-grid {
+    width: 100%;
+    height: auto;
+
+    gap: 15px;
+    display: grid;
+}
+
+.ventana-grid {
+    width: 100%;
+    height: 300px;
+
+    background-color: rgba(0, 0, 255, 0.185);
+}
+
+@media (max-width:780px) {
+    .block-1 {
+        display: flex;
+    }
+}
+
+
+.sesion-1 {
+    font-family: "Fredoka", sans-serif;
+
+    width: 100%;
+    height: auto;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    border: 3px solid var(--background);
+
+    border-radius: 20px;
+    transition: 0.2s ease-out;
+}
+
+.sesion-title {
+    font-size: 25px;
+    color: var(--h1-color);
+}
+
+.sesion-info {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+
+.sesion-button {
+    width: 100%;
+    height: 42px;
+
+    display: flex;
+    gap: 15px;
+}
+
+.visitar-button {
+    width: fit-content;
+    height: 42px;
+
+    padding: 6px 12px;
+
+    border-radius: 30px;
+
+    background-color: var(--primary-color);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.icon-ventana {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 30px;
+
+    background-color: var(--primary-color);
+}
+
+.sesion-1:hover {
+    border: 3px solid var(--primary-color)
+}

@@ -1,13 +1,17 @@
-/*IMPORT*/
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@502&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@502&family=Protest+Riot&display=swap');
 
 /*
-font-family: 'Lato', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Nunito Sans', sans-serif;
+.fredoka-<uniquifier> {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 502;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
     margin: 0;
@@ -28,6 +32,12 @@ body {
     font-smooth: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    line-height: 1.5;
+}
+
+body {
+    background: var(--background);
 }
 
 input, button, textarea, select {
