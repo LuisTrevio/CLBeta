@@ -1,5 +1,5 @@
-:root{
-    --header: #ececec00;
+body {
+    --header: #347bd8;
     --header-color: #f1f1f1;
     
     --header-on: rgb(255, 255, 255);
@@ -12,26 +12,81 @@
     --primary-color-select: #104285;
 
     --background: #ffffff;
+    --text: #333333;
+    --wave: url(../promp/wave.svg);
+
+    --dark-btn: url(sun.521d76c1.svg);
 
     --button-dark: #124992;
- /*   --background: #202124; */
-
-
-    --shadow-color: 0deg 100% 15%;
-    --shadow-m:
-    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
-    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
-    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
-    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
 }
 
 @media (max-width:780px) {
-    :root {
-
+    body {
         --header: #347bd8;
         --header-color: #333333;
 
         --header-on: rgb(255, 255, 255);
         --header-color-on: #000000;
+    }
+}
+
+body.dark-theme {
+    --header: #347bd8;
+    --header-color: #f1f1f1;
+    
+    --header-on: #202124;
+    --header-color-on: #d3d3d3;
+
+    --h1-color: #5075a5;
+    --h1-color-select:#102b83;
+
+    --primary-color: #5075a5;
+    --primary-color-select: #104285;
+
+    --background: #202124;
+    --text: #d3d3d3;
+    --wave: url(../promp/wavedark.svg);
+
+    --dark-btn: url(moon.9b54569f.svg);
+
+    --button-dark: #124992;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --header: #347bd8;
+        --header-color: #f1f1f1;
+        
+        --header-on: #202124;
+        --header-color-on: #d3d3d3;
+    
+        --h1-color: #5075a5;
+        --h1-color-select:#102b83;
+    
+        --primary-color: #5075a5;
+        --primary-color-select: #104285;
+    
+        --background: #202124;
+        --text: #d3d3d3;
+    
+        --button-dark: #124992;
+    }
+    body.light-theme {
+        --header: #347bd8;
+        --header-color: #f1f1f1;
+        
+        --header-on: rgb(255, 255, 255);
+        --header-color-on: #333333;
+    
+        --h1-color: #347bd8;
+        --h1-color-select:#102b83;
+    
+        --primary-color: #347bd8;
+        --primary-color-select: #104285;
+    
+        --background: #ffffff;
+        --text: #333333;
+    
+        --button-dark: #124992;
     }
 }

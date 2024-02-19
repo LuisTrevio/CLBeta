@@ -6,8 +6,8 @@
 }
 
 .hero-bg {
-    background: #347bd8;
-    background-image: url(../promp/wave.svg);
+    background: var(--primary-color);
+    background-image: var(--wave);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@
 
 .sesion-info {
     font-size: 14px;
-    color: rgb(51, 51, 51);
+    color: var(--text);
 }
 
 .sesion-button {
@@ -117,12 +117,10 @@
     width: fit-content;
     height: 42px;
 
-    padding: 6px 12px;
 
     border-radius: 30px;
 
-    background-color: var(--primary-color);
-    color: white;
+    color: var(--primary-color);
 
     display: flex;
     align-items: center;

@@ -4,7 +4,7 @@ header {
 
     position: fixed;
 
-    background-color: var(--header);
+    background-color: var(--primary-color);
     
     font-family: "Fredoka", sans-serif;
 
@@ -13,7 +13,7 @@ header {
     transition: 0.2s ease-out;
 }
 
-.active {
+.header-scroll {
     background-color: var(--header-on);
 }
 
@@ -32,7 +32,7 @@ header {
 
 .menu-mobile {
     display: none;
-}
+}/*Vista movil desactivado*/
 
 .logo{
     width: 230px;
@@ -71,7 +71,7 @@ header {
 
 .sample-text {
     font-family: "Fredoka", sans-serif;
-}
+}/*Beta*/
 
 .menu-desk{
     width: 340px;
@@ -86,30 +86,26 @@ header {
     gap: 25px;
 }
 
-.nbm-link1 {
+.desk-link {
     text-decoration: none;
     color:var(--header-color);
 
     transition: 0.2s ease-out;
 }
 
-.nbm-link1:hover{
+.desk-link:hover{
     color:var(--primary-color-select);
-}
-
-.char-mobile {
-    display: none;
 }
 
 .resolt {
     color: var(--header-color-on);
-}
+}/* color en scroll*/
 
 .visible-btn {
     display: none;
 }
 
-.dark-mode {
+.pil-desk {
     display: flex;
 
     width: 80px;
@@ -119,7 +115,7 @@ header {
     justify-content: center;
 }
 
-.restone {
+.pildora-reactora-nuclear-destructiva {
     background-color: var(--button-dark);
 
     width: 60px;
@@ -131,24 +127,32 @@ header {
     flex-direction: row;
 }
 
-.dark-button, .dark-resolution {
+.desk-dark, .dark-resolution {
     width: 30px;
     height: 30px;
 
     border-radius: 30px;
 }
 
-.dark-button {
-    background-image: url(sun.521d76c1.svg);
+.desk-dark {
+    background: var(--primary-color);
+    border: 2px solid var(--button-dark);
+
+    background-image: var(--dark-btn);
     background-size: 15px 15px;
 
     background-position: center;
     background-repeat: no-repeat;
+    transition: 0.2s ease-out;
+}
+
+.demo {
+    transform: translate(30px, 0);
 }
 
 @media (max-width:780px) {
 
-    .dark-mode{
+    .pildora-reactora-nuclear-destructiva{
         display: none;
     }
 
@@ -241,7 +245,7 @@ header {
     
         position: fixed;
     
-        background-color: var(--header);
+        background-color: var(--primary-color);
     
         transform: translateY(-100%);
         transition: 0.35s cubic-bezier(1, 0.04, 0.36, 1);
@@ -311,4 +315,25 @@ header {
             transform:scale(1);
         }
     }
+}
+
+.pilpil{
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+}
+
+.dark-mb{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50px;
+
+    background: var(--primary-color-select);
+    background-image: var(--dark-btn);
+    background-size: 30px;
+    background-position: center;
+
+    background-repeat: no-repeat;
 }

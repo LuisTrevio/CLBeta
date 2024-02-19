@@ -48,6 +48,14 @@ button {
     border: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
 @media (max-width:780px) {
 
 }
