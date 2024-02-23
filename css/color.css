@@ -2,7 +2,7 @@ body {
     --header: #347bd8;
     --header-color: #f1f1f1;
     
-    --header-on: rgb(255, 255, 255);
+    --header-on: #dbeafd;
     --header-color-on: #333333;
 
     --h1-color: #347bd8;
@@ -11,13 +11,23 @@ body {
     --primary-color: #347bd8;
     --primary-color-select: #104285;
 
-    --background: #ffffff;
+    --second-color: #7d4e9c;
+    --second-color-select: #9e57ce;
+
+    --publish:#707070;
+
+    --background: #dbeafd;
     --text: #333333;
     --wave: url(../promp/wave.svg);
 
-    --dark-btn: url(sun.521d76c1.svg);
+    --dark-btn: url(../promp/sun.521d76c1.svg);
+    --window: url(../promp/window.svg);
+    --window-hover: url(../promp/windowd.svg);
 
     --button-dark: #124992;
+    --footer: #124992;
+
+    --bg-movil: hwb(0 100% 0% / 0.733);
 }
 
 @media (max-width:780px) {
@@ -34,6 +44,40 @@ body.dark-theme {
     --header: #347bd8;
     --header-color: #f1f1f1;
     
+    --header-on: #07090e;
+    --header-color-on: #d3d3d3;
+
+    --h1-color: #a1841c;
+    --h1-color-select:#e3b617;
+
+    --primary-color: #a1841c;
+    --primary-color-select: #e3b617;
+
+    --second-color: #7d4e9c;
+    --second-color-select: #9e57ce;
+
+    --publish:#504949;
+
+    /**--background: #202124;*/
+    --background: #07090e;
+    --text: #afafaf;
+    --wave: url(../promp/wavedark.svg);
+
+    --dark-btn: url(../promp/moon.9b54569f.svg);
+    --window: url(../promp/windowd.svg);
+    --window-hover: url(../promp/window.svg);
+
+    --button-dark: #745f12;
+    --footer: #124992;
+
+    --bg-movil: #212224e3;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+          --header: #347bd8;
+    --header-color: #f1f1f1;
+    
     --header-on: #202124;
     --header-color-on: #d3d3d3;
 
@@ -43,33 +87,23 @@ body.dark-theme {
     --primary-color: #5075a5;
     --primary-color-select: #104285;
 
+    --second-color: #7d4e9c;
+    --second-color-select: #9e57ce;
+
+    --publish:#969696;
+
     --background: #202124;
-    --text: #d3d3d3;
+    --text: #afafaf;
     --wave: url(../promp/wavedark.svg);
 
-    --dark-btn: url(moon.9b54569f.svg);
+    --dark-btn: url(../promp/moon.9b54569f.svg);
+    --window: url(../promp/windowd.svg);
+    --window-hover: url(../promp/window.svg);
 
     --button-dark: #124992;
-}
+    --footer: #124992;
 
-@media (prefers-color-scheme: dark) {
-    body {
-        --header: #347bd8;
-        --header-color: #f1f1f1;
-        
-        --header-on: #202124;
-        --header-color-on: #d3d3d3;
-    
-        --h1-color: #5075a5;
-        --h1-color-select:#102b83;
-    
-        --primary-color: #5075a5;
-        --primary-color-select: #104285;
-    
-        --background: #202124;
-        --text: #d3d3d3;
-    
-        --button-dark: #124992;
+    --bg-movil: #212224e3;
     }
     body.light-theme {
         --header: #347bd8;
@@ -84,9 +118,22 @@ body.dark-theme {
         --primary-color: #347bd8;
         --primary-color-select: #104285;
     
+        --second-color: #7d4e9c;
+        --second-color-select: #9e57ce;
+    
+        --publish:#707070;
+    
         --background: #ffffff;
         --text: #333333;
+        --wave: url(../promp/wave.svg);
+    
+        --dark-btn: url(../promp/sun.521d76c1.svg);
+        --window: url(../promp/window.svg);
+        --window-hover: url(../promp/windowd.svg);
     
         --button-dark: #124992;
+        --footer: #124992;
+    
+        --bg-movil: hwb(0 100% 0% / 0.733);
     }
 }

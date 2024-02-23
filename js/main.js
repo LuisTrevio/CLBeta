@@ -25,6 +25,7 @@ function ClickMenu() {
 
     document.querySelectorAll('.smooth-menu').forEach((result) => { result.classList.toggle('menu-grid-smooth'); })
 
+    document.querySelectorAll('.freeze').forEach((result) => { result.classList.toggle('menu-block'); })
 }
 
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");

@@ -2,6 +2,6 @@ footer {
     width: 100%;
     height: 300px;
 
-    background: var(--primary-color);
+    background: var(--footer);
     margin-top: 15px;
 }

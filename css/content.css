@@ -15,7 +15,7 @@
 
 .hero {
     width: 100%;
-    max-width: 1180px;
+    max-width: 1080px;
 
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +40,7 @@
 
 .block-1 {
     width: 100%;
-    max-width: 1190px;
+    max-width: 1090px;
 
     margin-left: auto;
     margin-right: auto;
@@ -53,6 +53,7 @@
 
     gap: 20px;
     flex-direction: column;
+    padding: 20px 0;
 }
 
 .entrada-grid {
@@ -63,41 +64,52 @@
     display: grid;
 }
 
-.ventana-grid {
-    width: 100%;
-    height: 300px;
-
-    background-color: rgba(0, 0, 255, 0.185);
-}
-
 @media (max-width:780px) {
     .block-1 {
         display: flex;
     }
 }
 
+.publish {
+    font-family: "Fredoka", sans-serif;
+    font-size: 25px;
 
-.sesion-1 {
+    color: var(--publish);
+    padding: 15px 18px;
+}
+
+.sesion-border {
+    border: 3px solid var(--background);
+    transition: 0.2s ease-out;
+    border-radius: 20px;
+}
+
+.sesion-content {
     font-family: "Fredoka", sans-serif;
 
     width: 100%;
     height: auto;
 
-    padding: 15px;
+    padding: 10px 15px;
 
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0px;
 
-    border: 3px solid var(--background);
-
-    border-radius: 20px;
     transition: 0.2s ease-out;
 }
 
 .sesion-title {
     font-size: 25px;
     color: var(--h1-color);
+    transition: 0.2s ease-out;
+}
+
+.sesion-subtitle {
+    font-size: 14px;
+    color: var(--publish);
+    transition: 0.2s ease-out;
+    margin-bottom: 10px;
 }
 
 .sesion-info {
@@ -106,11 +118,23 @@
 }
 
 .sesion-button {
+    font-family: "Fredoka", sans-serif;
+
     width: 100%;
     height: 42px;
 
+    padding: 0 18px;
+
     display: flex;
-    gap: 15px;
+    gap: 10px;
+}
+
+.sesion-border:active {
+    border: 3px solid var(--primary-color);
+}
+
+.sesion-content:hover .sesion-title {
+    color: var(--primary-color-select);
 }
 
 .visitar-button {
@@ -125,7 +149,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    transition: 0.2s ease-out;
+}
+
+.visitar-button:hover {
+    color: var(--primary-color-select);
 }
 
 .icon-ventana {
@@ -133,10 +161,33 @@
     height: 42px;
 
     border-radius: 30px;
-
-    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.sesion-1:hover {
-    border: 3px solid var(--primary-color)
+.svg-window {
+    fill: var(--primary-color);
+    transition: 0.2s ease-out;
+}
+
+.icon-ventana:hover .svg-window{
+    fill: var(--primary-color-select);
+}
+
+
+.block-2 {
+    width: 100%;
+    max-width: 1090px;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+
+    display: block;
+
+    gap: 20px;
+    padding: 20px 0;
+
+    background-color: var(--primary-color);
 }

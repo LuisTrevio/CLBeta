@@ -1,0 +1,21 @@
+.ventana-grid {
+    width: 100%;
+    height: 300px;
+
+    background-color: #98c5ff71;
+    border-radius: 30px;
+
+    display: block;
+    position: sticky;
+
+    z-index: 2;
+    top: 90px;
+
+    padding: 18px;
+}
+
+@media (max-width:780px) {
+    .ventana-grid {
+        display: none;
+    }
+}
