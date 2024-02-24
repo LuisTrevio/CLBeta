@@ -1,3 +1,8 @@
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+const currentTheme = (localStorage.getItem("theme"));
+
+const mtag = document.querySelector("meta[name=color-theme]");
 
 $(window).on("scroll", function() {
     if($(window).scrollTop() > 1) {
@@ -28,20 +33,9 @@ function ClickMenu() {
     document.querySelectorAll('.freeze').forEach((result) => { result.classList.toggle('menu-block'); })
 }
 
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-const mtag = document.querySelectorAll("meta[name=theme-color]");
+function darkm() { 
 
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme == "dark") {
-document.body.classList.toggle("dark-theme");
-} else if (currentTheme == "light") {
-document.body.classList.toggle("light-theme");
-}
-
-function darkm() {
-    document.querySelectorAll('.dl').forEach((result) => { result.classList.toggle('demo'); })
-
-if (prefersDarkScheme.matches) {
+    if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-theme");
     var theme = document.body.classList.contains("light-theme")
         ? "light"
@@ -53,17 +47,13 @@ if (prefersDarkScheme.matches) {
         ? "dark"
         : "light";
     }
+
     localStorage.setItem("theme", theme);
+        document.querySelectorAll('.dl').forEach((result) => { result.classList.toggle('demo'); })
+};
+
+if (currentTheme == "dark") {
+    document.body.classList.toggle("dark-theme");
+    } else if (currentTheme == "light") {
+    document.body.classList.toggle("light-theme");
 }
-//
-//document.querySelectorAll('.menu-on').forEach((result) => { result.classList.toggle('Menu-Full-on'); })
-
-//document.querySelectorAll('.scr-fr').forEach((result) => { result.classList.toggle('scroll-frost'); })
-
-//document.querySelectorAll('.smooth-menu').forEach((result) => { result.classList.toggle('menu-grid-smooth'); })
-
-//document.querySelectorAll('.smooth-credits').forEach((result) => { result.classList.toggle('credits-smooth'); })
-
-//document.querySelectorAll('.smooth-logo').forEach((result) => { result.classList.toggle('logo-on'); })
-
-//document.querySelectorAll('.ctn-scale').forEach((result) => { result.classList.toggle('content-scale'); })
