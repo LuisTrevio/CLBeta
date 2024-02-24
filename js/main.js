@@ -4,19 +4,24 @@ const currentTheme = (localStorage.getItem("theme"));
 
 const mtag = document.querySelector("meta[name=color-theme]");
 
-$(window).on("scroll", function() {
-    if($(window).scrollTop() > 1) {
-        $(".scroll-hd").addClass("header-scroll");
-        $(".scroll-tx").addClass("resolt");   
-        $(".scroll-bg").addClass("bg-resolt");
-        $(".scroll-btn").addClass("btn-resolt");
+let LastScrollY = window.scrollY
+
+window.addEventListener("scroll", () => {
+
+    if(LastScrollY < window.scrollY) {
+        console.log("arriba");
+        document.querySelectorAll('.scroll-hd').forEach((result) => { result.classList.add('header-scroll'); })
+        document.querySelectorAll('.scroll-tx').forEach((result) => { result.classList.add('resolt'); })
+        document.querySelectorAll('.scroll-bg').forEach((result) => { result.classList.add('bg-resolt'); })
+        document.querySelectorAll('.scroll-btn').forEach((result) => { result.classList.add('btn-resolt'); })
     } else {
-        $(".scroll-hd").removeClass("header-scroll");
-        $(".scroll-tx").removeClass("resolt");
-        $(".scroll-bg").removeClass("bg-resolt");
-        $(".scroll-btn").removeClass("btn-resolt");
+        console.log("abajo");
+        document.querySelectorAll('.scroll-hd').forEach((result) => { result.classList.remove('header-scroll');})
+        document.querySelectorAll('.scroll-tx').forEach((result) => { result.classList.remove('resolt'); })
+        document.querySelectorAll('.scroll-bg').forEach((result) => { result.classList.remove('bg-resolt'); })
+        document.querySelectorAll('.scroll-btn').forEach((result) => { result.classList.remove('btn-resolt'); })
     }
-});
+})
 
 function ClickMenu() {
     document.querySelectorAll('.br-1').forEach((result) => { result.classList.toggle('bar1-on'); })
