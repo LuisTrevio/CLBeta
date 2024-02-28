@@ -37,7 +37,7 @@ function ClickMenu() {
 
     document.querySelectorAll('.freeze').forEach((result) => { result.classList.toggle('menu-block'); })
 
-    document.querySelectorAll('.no-clic').forEach((result) => { result.classList.toggle('content-block'); })
+    document.querySelectorAll('.blur-fx').forEach((result) => { result.classList.toggle('content-block'); })
     
 }
 
@@ -55,7 +55,6 @@ function darkm() {
         ? "dark"
         : "light";
     }
-
     localStorage.setItem("theme", theme);
     document.querySelectorAll('.dl').forEach((result) => { result.classList.toggle('demo'); })
 };
