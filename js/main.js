@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
         document.querySelectorAll('.scroll-tx').forEach((result) => { result.classList.add('resolt'); })
         document.querySelectorAll('.scroll-bg').forEach((result) => { result.classList.add('bg-resolt'); })
         document.querySelectorAll('.scroll-btn').forEach((result) => { result.classList.add('btn-resolt'); })
-    } else {
+    } else { 
         console.log("abajo");
         document.querySelectorAll('.scroll-hd').forEach((result) => { result.classList.remove('header-scroll');})
         document.querySelectorAll('.scroll-tx').forEach((result) => { result.classList.remove('resolt'); })
@@ -36,6 +36,9 @@ function ClickMenu() {
     document.querySelectorAll('.smooth-menu').forEach((result) => { result.classList.toggle('menu-grid-smooth'); })
 
     document.querySelectorAll('.freeze').forEach((result) => { result.classList.toggle('menu-block'); })
+
+    document.querySelectorAll('.no-clic').forEach((result) => { result.classList.toggle('content-block'); })
+    
 }
 
 function darkm() { 
@@ -54,7 +57,7 @@ function darkm() {
     }
 
     localStorage.setItem("theme", theme);
-        document.querySelectorAll('.dl').forEach((result) => { result.classList.toggle('demo'); })
+    document.querySelectorAll('.dl').forEach((result) => { result.classList.toggle('demo'); })
 };
 
 if (currentTheme == "dark") {

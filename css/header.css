@@ -35,24 +35,12 @@ header {
 }/*Vista movil desactivado*/
 
 .logo{
-    width: 230px;
+    width: 100px;
     height: 70px;
 
     display: flex;
 
-    gap: 4px;
-}
-
-.logo-img {
-    width: 70px;
-    height: 70px;
-
-    background-image: url(favicon.svg);
-    background-size: 38px;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
+    padding: 4px 0 0 15px ;
 }
 
 .logo-title{
@@ -64,13 +52,16 @@ header {
     align-items: center;
 
     color: var(--header-color);
-    font-family: "Protest Riot", sans-serif;
+    
+    font-family: 'Josefin Sans', sans-serif;
 
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .sample-text {
+    font-size: 16px;
     font-family: "Fredoka", sans-serif;
+
 }/*Beta*/
 
 .menu-desk{
@@ -170,14 +161,20 @@ header {
         height: 60px;
     }
 
-    .logo-title{
+    .logo {
+        width: 73px;
+        height: 60px;
+        padding: 4px 0 0 0 ;
+    }
+
+    .sample-text {
         display: none;
     }
 
-    .logo {
-        width: 50px;
+    .logo-title {
         height: 60px;
     }
+
 
     .menu-desk{
         display: none;
@@ -235,6 +232,10 @@ header {
     display: none;
 }
 
+.content-block {
+    filter: blur(2px);
+}
+
 @media (max-width:780px) {
     .menu-wave {
         width: 100%;
@@ -247,15 +248,16 @@ header {
     
         background-color: var(--primary-color);
     
-        transform: translateY(-100%);
-        transition: 0.35s cubic-bezier(1, 0.04, 0.36, 1);
+        opacity: 0;
+        transition: 0.25s cubic-bezier(1, 0.04, 0.36, 1);
     
         z-index: 2;
         backdrop-filter: blur(3px);
+
     }
 
     .menu-wave-on {
-        transform: translateY(0);
+        opacity: 1;
     }
 
     .bg-resolt {
@@ -297,7 +299,7 @@ header {
     }
 
     .menu-grid-smooth {
-        animation: Smooth-menu-ed 0.752s forwards;
+        animation: Smooth-menu-ed 0.723s forwards;
     }
     
     @keyframes Smooth-menu-ed {
