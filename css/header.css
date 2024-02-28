@@ -253,11 +253,12 @@ header {
     
         z-index: 2;
         backdrop-filter: blur(3px);
-
+        pointer-events: none;
     }
 
     .menu-wave-on {
         opacity: 1;
+        pointer-events: all;
     }
 
     .bg-resolt {
