@@ -199,7 +199,7 @@ header {
     }
 }
 
-.bar-1, .bar-2, .bar-3 {
+.bar-1, .bar-2 {
     width: 20px;
     height: 2px;
 
@@ -220,20 +220,12 @@ header {
 }
 
 .bar2-on {
-    opacity: 0;
-}
-
-.bar3-on {
     position: fixed;
     transform: rotate(44deg);
 }
 
 .menu-wave {
     display: none;
-}
-
-.content-block {
-    filter: blur(2px);
 }
 
 @media (max-width:780px) {

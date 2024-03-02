@@ -27,18 +27,13 @@ function ClickMenu() {
     document.querySelectorAll('.br-1').forEach((result) => { result.classList.toggle('bar1-on'); })
 
     document.querySelectorAll('.br-2').forEach((result) => { result.classList.toggle('bar2-on'); })
-
-    document.querySelectorAll('.br-3').forEach((result) => { result.classList.toggle('bar3-on'); })
     //Estos tres comandos son para mover las tres barras del boton simulando una x
 
     document.querySelectorAll('.menu-on').forEach((result) => { result.classList.toggle('menu-wave-on'); })
 
     document.querySelectorAll('.smooth-menu').forEach((result) => { result.classList.toggle('menu-grid-smooth'); })
 
-    document.querySelectorAll('.freeze').forEach((result) => { result.classList.toggle('menu-block'); })
-
-    document.querySelectorAll('.blur-fx').forEach((result) => { result.classList.toggle('content-block'); })
-    
+    document.querySelectorAll('.freeze').forEach((result) => { result.classList.toggle('menu-block'); })  
 }
 
 function darkm() { 
