@@ -27,7 +27,7 @@ body {
     --window-hover: url(../promp/windowd.svg);
 
     --button-dark: #124992;
-    --footer: #124992;
+    --footer: #317cdf71;
 
     --bg-movil: #dbeafd;
 }
@@ -62,7 +62,7 @@ body.dark-theme {
     --window-hover: url(../promp/window.svg);
 
     --button-dark: #745f12;
-    --footer: #124992;
+    --footer: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(7 9 14) 77%, rgb(7 9 14) 98%, rgb(30 39 60) 100%);
 
     --bg-movil: #07090e;
 }
@@ -98,7 +98,7 @@ body.dark-theme {
     --window-hover: url(../promp/window.svg);
 
     --button-dark: #745f12;
-    --footer: #124992;
+    --footer:linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(7 9 14) 77%, rgb(7 9 14) 98%, rgb(30 39 60) 100%);
 
     --bg-movil: #07090e;
     }
