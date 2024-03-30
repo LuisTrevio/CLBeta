@@ -13,9 +13,10 @@ nav {
     transition: 0.2s ease-out;
 }
 
-.header-scroll {
+.header-scroll { /* Esto cambia de color cuando deslizamos hacia abajo */
     background-color: var(--header-on);
 }
+
 
 .nav-max{
     width: 100%;
@@ -223,6 +224,8 @@ nav {
     position: fixed;
     transform: rotate(44deg);
 }
+
+/* Estos activan y empiezan a girar en forma de x */
 
 .menu-wave {
     display: none;
